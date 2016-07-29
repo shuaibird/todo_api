@@ -4,10 +4,10 @@ var config = require('../config/config')
 
 var noOperation = () => {}
 
-var consoleLog = config.logging ? console.log.bind(console) : noop
+var consoleLog = config.logging ? console.log.bind(console) : noOperation
 
 var logger = {
-  log: () => {
+  log: function() {
     var args = Array.prototype.slice.call(arguments).map(argument => {
       var arg
 
