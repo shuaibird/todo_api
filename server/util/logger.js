@@ -12,7 +12,7 @@ var logger = {
       var arg
 
       if (typeof argument === 'object') {
-        var arg = JSON.stringify(arg, null, 2)
+        var arg = JSON.stringify(argument, null, 2)
       } else {
         arg = String(argument)
       }

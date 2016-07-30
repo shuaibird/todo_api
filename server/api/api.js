@@ -1,7 +1,7 @@
 var router = require('express').Router()
 
-router.use('/users', )
-router.use('/categories', )
-router.use('/posts', )
+router.use('/users', require('./user/userRoutes'))
+router.use('/categories', require('./category/categoryRoutes'))
+router.use('/posts', require('./post/postRoutes'))
 
 module.exports = router

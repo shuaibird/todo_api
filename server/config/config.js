@@ -9,6 +9,12 @@ process.env.NODE_ENV = process.env.NODE_ENV || config.dev
 
 config.env = process.env.NODE_ENV
 
-var envConfig = require(`./${config.env}`)
+var envConfig
+
+try {
+  envConfig = require(`./${config.env}`) || {}
+} catch(err) {
+  envConfig = {}
+}
 
 module.exports = Object.assign(config, envConfig)
