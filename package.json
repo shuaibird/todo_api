@@ -6,13 +6,18 @@
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
-  "keywords": ["api", "node", "express"],
+  "keywords": [
+    "api",
+    "node",
+    "express"
+  ],
   "author": "shuaibird",
   "license": "ISC",
   "dependencies": {
     "body-parser": "^1.15.2",
     "colors": "^1.1.2",
     "express": "^4.14.0",
+    "mongoose": "^4.5.9",
     "morgan": "^1.7.0"
   }
 }
