@@ -1,3 +1,6 @@
 module.exports = {
-  logging: true
+  logging: true,
+  db: {
+    url: 'mongodb://localhost/nodeblog'
+  }
 }
