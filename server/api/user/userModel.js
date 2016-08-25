@@ -5,6 +5,7 @@ var userSchema = new mongoose.Schema({
     type: String,
     required: true,
     unique: true
+  }
 })
 
 var userModel = mongoose.model('user', userSchema)
